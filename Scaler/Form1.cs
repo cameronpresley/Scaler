@@ -6,7 +6,7 @@ namespace Scaler
 {
     public partial class Form1 : Form
     {
-        private const string LayoutFileLocation = @"C:\users\cpresley\layout.xml";
+        private readonly string LayoutFileLocation = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\layout.xml";
         public Form1()
         {
             InitializeComponent();
